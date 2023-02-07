@@ -39,7 +39,8 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input
-            class="form-control mr-sm-2" id="searchTxt"
+            class="form-control mr-sm-2"
+            id="searchTxt"
             type="search"
             placeholder="Search"
             aria-label="Search"
@@ -53,9 +54,14 @@
 
     <div class="container my-4">
       <h1>Welcome to Magic Notes</h1>
-
       <div class="card">
         <div class="card-body">
+          <div class="form-group">
+            <h5 class="card-title">Add Title</h5>
+            <input type="text" class="form-control" id="addTitle" aria-describedby="title"
+                        placeholder="Enter title">
+          </div>
+
           <h5 class="card-title">Add a Note</h5>
           <div class="form-group">
             <textarea class="form-control" id="addTxt" rows="3"></textarea>
@@ -64,10 +70,10 @@
         </div>
       </div>
 
-      <hr>
+      <hr />
       <h2>Your Notes</h2>
-      <hr>
-      <div id="notes" class="row container-fluid"> </div>
+      <hr />
+      <div id="notes" class="row container-fluid"></div>
     </div>
 
     <script
